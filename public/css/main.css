@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:400,600,600i,700,700i,800,800i,900,900i");
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #fff;
+  font-family: Muli, sans-serif;
+  color: #707d8f;
+  font-size: 18px;
+  line-height: 29px;
+  overflow: hidden; }
+
+.navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 86px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: #2e3261; }
+
+.w-nav {
+  position: relative;
+  background: #176abd;
+  z-index: 1000; }
+
+.w-nav:before, .w-nav:after {
+  content: " ";
+  display: table; }
+
+.w-nav:after {
+  clear: both; }
+
+.content-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1070px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.w-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px; }
+
+.brand {
+  margin-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease; }
+
+.w-nav-brand {
+  position: relative;
+  float: left;
+  text-decoration: none;
+  color: #333333; }
+
+.nav-menu {
+  display: inline-block;
+  width: 80%;
+  float: none; }
+
+.w-nav-menu {
+  position: relative;
+  float: right; }
+
+.nav-link {
+  position: relative;
+  overflow: hidden;
+  padding: 32px 28px 25px;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+  font-family: Raleway, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block; }
+
+.register {
+  position: relative;
+  background-color: #2e3261; }
+
+.nav-link.register {
+  height: 86px;
+  padding-right: 37px;
+  padding-left: 37px;
+  float: right;
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(276deg, #3cba92, #0ba360);
+  background-image: linear-gradient(174deg, #3cba92, #0ba360);
+  -webkit-transition-property: opacity;
+  transition-property: opacity; }
+
+.w-nav-button {
+  position: relative;
+  float: right;
+  padding: 18px;
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.intro-section {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  background-image: -webkit-linear-gradient(270deg, #1978d7, #1978d7), url(http://uploads.webflow.com/5727cdb3639cfa231e7b21d8/573659a0eea54c982f2a9d37_photo-1445359179985-460648949e10.jpg);
+  background-image: linear-gradient(180deg, #1978d7, #1978d7), url(http://uploads.webflow.com/5727cdb3639cfa231e7b21d8/573659a0eea54c982f2a9d37_photo-1445359179985-460648949e10.jpg);
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat; }
+
+.intro-text {
+  position: relative;
+  text-align: center; }
+
+.mini-vs {
+  position: relative;
+  z-index: 1;
+  font-family: Montserrat, sans-serif;
+  color: #707d8f;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 700;
+  letter-spacing: 3.3px;
+  text-transform: uppercase;
+  top: -65px; }
+  .mini-vs img {
+    height: 80px; }
+
+.box-bg {
+  position: absolute;
+  top: -94px;
+  z-index: 0;
+  width: 100%;
+  min-height: 630px; }
+
+.intro-block-1 {
+  position: relative; }
+  .intro-block-1 h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 70px;
+    font-weight: 800;
+    color: #fff; }
+
+.underline {
+  display: inline-block;
+  width: 95px;
+  height: 5px;
+  margin-top: 45px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background-color: #fff; }
+
+.underline.crimson {
+  position: relative;
+  z-index: 1;
+  background-color: #fff; }
+
+.intro-block-2 {
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  color: #fff; }
+
+.bar-geometric {
+  position: absolute;
+  bottom: -241px; }
+  .bar-geometric svg {
+    position: relative;
+    left: -136px;
+    transform: scaleY(0.7); }
+
+.logo-techday {
+  position: absolute;
+  left: calc(50% - 140px);
+  bottom: -550px; }
+  .logo-techday .filled-rect {
+    background-color: #ff4a8e;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0; }
+  .logo-techday .main-rect {
+    position: relative;
+    z-index: 3;
+    padding: 50px 38px;
+    background-color: #1978d7;
+    width: 280px;
+    height: 283px;
+    box-shadow: 0px 45px 250px 0px rgba(0, 0, 0, 0.52), inset 61.131px 53.141px 250px 0px rgba(0, 0, 0, 0.19); }
+  .logo-techday .unfilled-rect {
+    border-width: 8px;
+    border-color: #ff4a8e;
+    border-style: solid;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    right: 0; }
+
+#logoTechDay path {
+  fill: transparent;
+  stroke: #fff;
+  stroke-width: 1; }
+
+.animatable {
+  transition: stroke-dashoffset 1s ease, fill 0.3s ease 0.6s; }
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0; } }
+
+@media screen and (max-width: 1370px) {
+  .intro-block-1 h1 {
+    font-size: 60px; }
+  .mini-vs {
+    top: -20px; }
+    .mini-vs img {
+      height: 50px; }
+  .underline {
+    margin-top: 25px; }
+  .intro-section {
+    padding-top: 5%;
+    padding-bottom: 8%; }
+  .logo-techday {
+    left: calc(50% - 100px);
+    bottom: -150px !important; }
+    .logo-techday .main-rect {
+      width: 200px;
+      height: 203px;
+      padding: 40px 35px; } }
+
+@media screen and (max-width: 414px) {
+  .brand {
+    width: 100%;
+    text-align: center; }
+  .intro-block-1 h1 {
+    font-size: 34px; }
+  .mini-vs {
+    top: -13px; }
+    .mini-vs img {
+      height: 50px; }
+  .underline {
+    margin-top: 18px; }
+  .intro-section {
+    padding-top: 12%;
+    padding-bottom: 35%; }
+  .logo-techday {
+    left: calc(50% - 100px);
+    bottom: -550px; }
+    .logo-techday .main-rect {
+      width: 200px;
+      height: 203px;
+      padding: 40px 35px; } }
