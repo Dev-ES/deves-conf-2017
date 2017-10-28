@@ -130,8 +130,8 @@ body {
     padding-left: 37px;
     float: right;
     background-color: transparent;
-    background-image: -webkit-linear-gradient(276deg, #3cba92, #0ba360);
-    background-image: linear-gradient(174deg, #3cba92, #0ba360);
+    background-image: -webkit-linear-gradient(174deg, #1860ab, #165da6);
+    background-image: linear-gradient(174deg, #1860ab, #165da6);
     -webkit-transition-property: opacity;
     transition-property: opacity;
 }
@@ -141,7 +141,7 @@ body {
     float: right;
     padding: 18px;
     font-size: 24px;
-    display: none;
+    display: block;
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     tap-highlight-color: rgba(0,0,0,0);
