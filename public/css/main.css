@@ -269,6 +269,16 @@ body {
       padding: 40px 35px; } }
 
 @media screen and (max-width: 414px) {
+  .w-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0; }
+  .w-header .w-nav-menu {
+    width: 100%; }
+  .w-header .nav-link.register {
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center; }
   .brand {
     width: 100%;
     text-align: center; }
