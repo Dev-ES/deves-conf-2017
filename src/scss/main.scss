@@ -89,6 +89,21 @@ body {
     display: inline-block;
     width: 80%;
     float: none;
+
+    .socials {
+        float: right;
+        padding: 25px;
+        
+        a {
+            margin: 0 5px;
+            text-decoration: none;
+        }
+
+        img {
+            max-height: 30px;
+            width: auto;
+        }
+    }
 }
 
 .w-nav-menu {
@@ -234,6 +249,8 @@ body {
 .bar-geometric {
     position: absolute;
     bottom: -241px;
+    overflow-x: hidden;
+    width: 100%;
 
     svg {
         position: relative;
@@ -302,6 +319,10 @@ $fillTime: 0.3s;
     display:block;
     margin-top: 300px;
     width:100%;
+
+    h2 {
+        text-align: center;
+    }
   
     .speaker {
       display: inline-block;
@@ -325,11 +346,28 @@ $fillTime: 0.3s;
         display: inline;
         float: left;
         width: 25%;
+        position: relative;
   
         img {
           height: auto;
           max-width: 90%;
           margin: 5%;
+        }
+
+        .talk-icon {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            bottom: 0;
+            box-shadow: 0 1px 2px rgba(0,0,0,.15);
+            transform: translateY(-20px) scale(0);
+            
+
+            img {
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+            }
         }
       }
   
@@ -360,22 +398,47 @@ $fillTime: 0.3s;
   
   // SECTION: About
   .about-section {
-    background: url(../img/geometrics.png) repeat center center transparent;
     display:block;
     margin: 50px 0;
     padding:75px 0;
     width:100%;
+    background-image: url('../img/geometrics.png');
+
+    .content-wrapper {
+        display: flex;
+        padding: 0;
+        background-color: #fff;
+        -webkit-box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.11);
+        -moz-box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.11);
+        box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.11);
+    }
+
+    .about-logo {
+        background-color: #176abd;
+        width: 40%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 190px;
+        }
+
+        .square-border {
+            position: absolute;
+            bottom: -41px;
+            right: -50px;
+        }
+    }
   
     .content {
-      background: url(../img/bg-about-text.png) no-repeat right center #ffffff;
       background-size: auto 100%;
-      width: 100%;
+      width: 60%;
       padding: 45px 30px;
       position:relative;
   
-      -webkit-box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.11);
-      -moz-box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.11);
-      box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.11);
+      
   
       h2 {
         background: url(../img/line.png) no-repeat left center transparent;
@@ -385,6 +448,8 @@ $fillTime: 0.3s;
         margin-left: 15px;
         padding-left: 60px;
         padding-top: 0;
+        font-weight: normal;
+        color: #176abd;
       }
   
       p {
@@ -392,7 +457,6 @@ $fillTime: 0.3s;
         line-height: 24px;
         margin-left: 80px;
         margin-top: 30px;
-        max-width: 40%;
         text-align: left;
       }
   
@@ -480,6 +544,14 @@ $fillTime: 0.3s;
       margin: 0 auto;
       text-align: center;
       width: 70%;
+
+      .logo-salesiano {
+        position: absolute;
+        top: 300px;
+        left: calc(50% - 155px);
+        transform: scale(5);
+        opacity: 0;
+      }
 
       .local-pink {
           position: absolute;
@@ -583,6 +655,53 @@ $fillTime: 0.3s;
     }
 }
 
+@media screen and (max-width: 800px) {
+    .nav-menu {
+        width: 70%;
+    }
+
+    .intro-section {
+        padding-top: 14%;
+        padding-bottom: 19%;
+    }
+
+    .about-section {
+        
+        .content-wrapper {
+            max-width: 90%;
+        }
+
+        .content {
+            h2 {
+                background: none;
+                padding-left: 0;
+            }
+            p {
+                margin-left: 10px;
+            }
+        }
+
+        .about-logo {
+            .square-border {
+                right: 15px;
+            }
+        }
+    }
+    .place-section {
+        .local-image {
+            .logo-salesiano {
+                top: 255px;
+                transform: scale(2);
+            }
+
+            .local-pink,
+            .local-blue {
+                display: none;
+            }
+        }
+    }
+}
+
 // MOBILE
 @media screen and (max-width: 414px) {
     .w-header {
@@ -599,6 +718,10 @@ $fillTime: 0.3s;
         text-align: center;
     }
     .nav-link.btn-palestra {
+        display: none;
+    }
+
+    .nav-menu .socials {
         display: none;
     }
     
@@ -638,5 +761,52 @@ $fillTime: 0.3s;
             height: 203px;
             padding: 40px 35px;
         }
+    }
+
+    .speakers-section {
+        .speaker {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .talk-time {
+                width: 36%;
+            }
+
+            .speaker-photo {
+                width: 100%;
+            }
+
+            .speaker-details {
+                width: 100%;
+            }
+        }
+    }
+
+    .about-section {
+        .content {
+            width: 100%;
+        }
+
+        .about-logo {
+            display: none;
+        }
+    }
+
+    .place-section {
+        .local-image {
+            .logo-salesiano {
+                width: 150px;
+                left: calc(50% - 73px);
+                top: 184px;
+            }
+        }
+    }
+
+    .footer .column-left {
+        width: 59%;
+    }
+    .footer .column-right {
+        width: 38%;
     }
 }

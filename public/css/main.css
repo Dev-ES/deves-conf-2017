@@ -77,6 +77,15 @@ body {
   display: inline-block;
   width: 80%;
   float: none; }
+  .nav-menu .socials {
+    float: right;
+    padding: 25px; }
+    .nav-menu .socials a {
+      margin: 0 5px;
+      text-decoration: none; }
+    .nav-menu .socials img {
+      max-height: 30px;
+      width: auto; }
 
 .w-nav-menu {
   position: relative;
@@ -201,7 +210,9 @@ body {
 
 .bar-geometric {
   position: absolute;
-  bottom: -241px; }
+  bottom: -241px;
+  overflow-x: hidden;
+  width: 100%; }
   .bar-geometric svg {
     position: relative;
     left: -136px;
@@ -250,6 +261,8 @@ body {
   display: block;
   margin-top: 300px;
   width: 100%; }
+  .speakers-section h2 {
+    text-align: center; }
   .speakers-section .speaker {
     display: inline-block;
     margin: 30px 0; }
@@ -268,11 +281,23 @@ body {
       background-size: 100% auto;
       display: inline;
       float: left;
-      width: 25%; }
+      width: 25%;
+      position: relative; }
       .speakers-section .speaker .speaker-photo img {
         height: auto;
         max-width: 90%;
         margin: 5%; }
+      .speakers-section .speaker .speaker-photo .talk-icon {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        bottom: 0;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+        transform: translateY(-20px) scale(0); }
+        .speakers-section .speaker .speaker-photo .talk-icon img {
+          width: 100%;
+          max-width: 100%;
+          margin: 0; }
     .speakers-section .speaker .speaker-details {
       display: inline;
       float: left;
@@ -290,20 +315,36 @@ body {
         margin-top: 15px; }
 
 .about-section {
-  background: url(../img/geometrics.png) repeat center center transparent;
   display: block;
   margin: 50px 0;
   padding: 75px 0;
-  width: 100%; }
-  .about-section .content {
-    background: url(../img/bg-about-text.png) no-repeat right center #ffffff;
-    background-size: auto 100%;
-    width: 100%;
-    padding: 45px 30px;
-    position: relative;
+  width: 100%;
+  background-image: url("../img/geometrics.png"); }
+  .about-section .content-wrapper {
+    display: flex;
+    padding: 0;
+    background-color: #fff;
     -webkit-box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.11);
     -moz-box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.11);
     box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.11); }
+  .about-section .about-logo {
+    background-color: #176abd;
+    width: 40%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .about-section .about-logo img {
+      max-width: 190px; }
+    .about-section .about-logo .square-border {
+      position: absolute;
+      bottom: -41px;
+      right: -50px; }
+  .about-section .content {
+    background-size: auto 100%;
+    width: 60%;
+    padding: 45px 30px;
+    position: relative; }
     .about-section .content h2 {
       background: url(../img/line.png) no-repeat left center transparent;
       display: inline;
@@ -311,13 +352,14 @@ body {
       line-height: 0;
       margin-left: 15px;
       padding-left: 60px;
-      padding-top: 0; }
+      padding-top: 0;
+      font-weight: normal;
+      color: #176abd; }
     .about-section .content p {
       font-size: 17px;
       line-height: 24px;
       margin-left: 80px;
       margin-top: 30px;
-      max-width: 40%;
       text-align: left; }
     .about-section .content svg {
       bottom: -35px;
@@ -379,6 +421,12 @@ body {
     margin: 0 auto;
     text-align: center;
     width: 70%; }
+    .place-section .local-image .logo-salesiano {
+      position: absolute;
+      top: 300px;
+      left: calc(50% - 155px);
+      transform: scale(5);
+      opacity: 0; }
     .place-section .local-image .local-pink {
       position: absolute;
       width: 70%;
@@ -444,6 +492,28 @@ body {
       height: 203px;
       padding: 40px 35px; } }
 
+@media screen and (max-width: 800px) {
+  .nav-menu {
+    width: 70%; }
+  .intro-section {
+    padding-top: 14%;
+    padding-bottom: 19%; }
+  .about-section .content-wrapper {
+    max-width: 90%; }
+  .about-section .content h2 {
+    background: none;
+    padding-left: 0; }
+  .about-section .content p {
+    margin-left: 10px; }
+  .about-section .about-logo .square-border {
+    right: 15px; }
+  .place-section .local-image .logo-salesiano {
+    top: 255px;
+    transform: scale(2); }
+  .place-section .local-image .local-pink,
+  .place-section .local-image .local-blue {
+    display: none; } }
+
 @media screen and (max-width: 414px) {
   .w-header {
     display: grid;
@@ -456,6 +526,8 @@ body {
     padding-left: 20px;
     text-align: center; }
   .nav-link.btn-palestra {
+    display: none; }
+  .nav-menu .socials {
     display: none; }
   .brand {
     width: 100%;
@@ -477,4 +549,26 @@ body {
     .logo-techday .main-rect {
       width: 200px;
       height: 203px;
-      padding: 40px 35px; } }
+      padding: 40px 35px; }
+  .speakers-section .speaker {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .speakers-section .speaker .talk-time {
+      width: 36%; }
+    .speakers-section .speaker .speaker-photo {
+      width: 100%; }
+    .speakers-section .speaker .speaker-details {
+      width: 100%; }
+  .about-section .content {
+    width: 100%; }
+  .about-section .about-logo {
+    display: none; }
+  .place-section .local-image .logo-salesiano {
+    width: 150px;
+    left: calc(50% - 73px);
+    top: 184px; }
+  .footer .column-left {
+    width: 59%; }
+  .footer .column-right {
+    width: 38%; } }
