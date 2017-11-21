@@ -283,6 +283,8 @@ body {
       float: left;
       width: 25%;
       position: relative; }
+      .speakers-section .speaker .speaker-photo.speaker-lunch {
+        background: none; }
       .speakers-section .speaker .speaker-photo img {
         height: auto;
         max-width: 90%;
