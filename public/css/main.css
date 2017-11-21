@@ -394,7 +394,8 @@ body {
   min-height: 500px;
   position: relative;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden; }
   .place-section h2 {
     margin-bottom: 30px; }
   .place-section h3 {
