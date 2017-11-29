@@ -129,6 +129,9 @@ body {
 .nav-link.btn-inscricao {
   background-image: linear-gradient(174deg, #f44686, #d73e76); }
 
+.btn-blog {
+  padding: 15px; }
+
 .w-nav-button {
   position: relative;
   float: right;
