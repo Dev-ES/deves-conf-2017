@@ -290,6 +290,7 @@ body {
         background: none; }
       .speakers-section .speaker .speaker-photo img {
         height: auto;
+        min-width: 205px;
         max-width: 90%;
         margin: 5%; }
       .speakers-section .speaker .speaker-photo .talk-icon {
